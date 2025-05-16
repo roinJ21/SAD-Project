@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online Veterinary System</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <header>
+        <nav>
+            <i class="fas fa-paw paw-icon"></i>
+                <ul>
+                    <li><a href="#home">Overview</a></li>
+                    <li><a href="#services">Subscription</a></li>
+                    <li><a href="#appointment">Schedule</a></li>
+                    <li><a href="#consultation">Consultation</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+
+            <div class="nav-right">
+                <button class="profile-btn">
+                    <span class="circle-icon"><i class="fas fa-user"></i></span>
+                        Sign In
+                </button>
+            </div>
+            </nav>
+    </header>
+
+    <main>
+        <section id="home" class="hero-section">
+            <div class="container">
+                <h2>Welcome to Paws and Sniff Clinic!</h2>
+                <p>Your one-stop solution for all your pet's health needs. We offer online appointments, consultations, and more.</p>
+                <button onclick="window.location.href='#appointment'">Book an Appointment</button>
+            </div>
+        </section>
+
+         <section id="subscription" class="subscription-section">
+            <div class="container">
+                <h2>Subscribtions</h2>
+                <p>Stay updated with the latest pet health tips and exclusive offers.</p>
+                <form id="subscription-form">
+                    <div class="form-group">
+                        <label for="subscription-email">Email:</label>
+                        <input type="email" id="subscription-email" name="email" required>
+                    </div>
+                    <button type="submit">Subscribe Now</button>
+                </form>
+                <div id="subscription-message" class="message"></div>
+            </div>
+        </section>
+
+        <section id="services" class="services-section">
+            <div class="container">
+                <h2>Our Services</h2>
+                <div class="service-grid">
+                    <div class="service-card">
+                        <i class="fas fa-calendar-check"></i>
+                        <h3>Online Appointments</h3>
+                        <p>Schedule a virtual appointment with our experienced veterinarians.</p>
+                    </div>
+                    <div class="service-card">
+                        <i class="fas fa-stethoscope"></i>
+                        <h3>Online Consultation</h3>
+                        <p>Get expert advice and consultation for your pet's health concerns.</p>
+                    </div>
+                    <div class="service-card">
+                        <i class="fas fa-file-medical"></i>
+                        <h3>Health Records</h3>
+                        <p>Access your pet's health records and manage their information.</p>
+                    </div>
+                    <div class="service-card">
+                        <i class="fas fa-comments"></i>
+                        <h3>24/7 Support</h3>
+                        <p>We are available 24/7 for any urgent concerns.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="appointment" class="appointment-section">
+            <div class="container">
+                <h2>Book an Appointment</h2>
+                <form id="appointment-form">
+                    <div class="form-group">
+                        <label for="name">Pet Name:</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="owner">Owner Name:</label>
+                        <input type="text" id="owner" name="owner" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email:</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                     <div class="form-group">
+                        <label for="phone">Phone Number:</label>
+                        <input type="tel" id="phone" name="phone" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="date">Date:</label>
+                        <input type="date" id="date" name="date" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="time">Time:</label>
+                        <input type="time" id="time" name="time" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="service">Service:</label>
+                        <select id="service" name="service">
+                            <option value="consultation">Consultation</option>
+                            <option value="vaccination">Vaccination</option>
+                            <option value="checkup">Checkup</option>
+                            <option value="other">Other</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Message:</label>
+                        <textarea id="message" name="message" rows="4" required></textarea>
+                    </div>
+                    <button type="submit">Request Appointment</button>
+                </form>
+                <div id="appointment-message" class="message"></div>
+            </div>
+        </section>
+
+        <section id="consultation" class="consultation-section">
+            <div class="container">
+                <h2>Request a Consultation</h2>
+                <form id="consultation-form">
+                    <div class="form-group">
+                        <label for="pet-name">Pet Name:</label>
+                        <input type="text" id="pet-name" name="pet-name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="owner-name">Owner Name:</label>
+                        <input type="text" id="owner-name" name="owner-name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="consult-email">Email:</label>
+                        <input type="email" id="consult-email" name="consult-email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="consult-phone">Phone Number:</label>
+                        <input type="tel" id="consult-phone" name="consult-phone" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="consult-message">Describe your pet's condition:</label>
+                        <textarea id="consult-message" name="consult-message" rows="4" required></textarea>
+                    </div>
+                    <button type="submit">Request Consultation</button>
+                </form>
+                <div id="consultation-message" class="message"></div>
+            </div>
+        </section>
+
+        <section id="contact" class="contact-section">
+            <div class="container">
+                <h2>Contact Us</h2>
+                <p>Email: info@onlinevet.com</p>
+                <p>Phone: +123 456 7890</p>
+                <p>Address: 123 Main Street, Anytown, USA</p>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Online Veterinary System. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="https://kit.fontawesome.com/f41b98105d.js" crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+</body>
+</html>
