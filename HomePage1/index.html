@@ -1,84 +1,87 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Veterinary Overview</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online Veterinary System</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
-    <section class="hero">
-        <div class="search-container">
-            <input type="text" placeholder="Helping you care for your furry friend. Search..." />
-            <button>SEARCH</button>
-        </div>
-    </section>
+    <header>
+        <nav>
+            <i class="fas fa-paw paw-icon"></i>
+                <ul>
+                    <li><a href="#home">Overview</a></li>
+                    <li><a href="#services">Subscription</a></li>
+                    <li><a href="#appointment">Schedule</a></li>
+                    <li><a href="#consultation">Consultation</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
 
-    <section class="menu-bar">
-        <div class="menu-item">
+            <div class="nav-right">
+                <button class="profile-btn">
+                    <span class="circle-icon"><i class="fas fa-user"></i></span>
+                        Sign In
+                </button>
+            </div>
+            </nav>
+    </header>
+
+    <main>
+        <section id="home" class="hero-section">
+            <div class="container">
+                <h2>Welcome to Paws and Sniff Clinic!</h2>
+                <p>Your one-stop solution for all your pet's health needs. We offer online appointments, consultations, and more.</p>
+                <button onclick="window.location.href='#appointment'">Book an Appointment</button>
+            </div>
+        </section>
+
+        <section class="hero">
+             <div class="search-container">
+             <input type="text" placeholder="Helping you care for your furry friend. Search..." />
+            <button>SEARCH</button>
+             </div>
+         </section>
+
+                <section class="menu-bar">
+            <div class="menu-item">
             <img src="Subscription.png" alt="Subscription" />
             <div>Subscription</div>
-        </div>
-        <div class="menu-item active">
+            </div>
+            <div class="menu-item active">
             <img src="Veterinarian.png" alt="Veterinarian" />
             <div>Veterinarian</div>
-        </div>
-        <div class="menu-item">
+            </div>
+            <div class="menu-item">
             <img src="Schedules.png" alt="Schedules" />
             <div>Schedules</div>
-        </div>
-        <div class="menu-item">
+            </div>
+            <div class="menu-item">
             <img src="FAQ.png" alt="FAQ" />
             <div>FAQ</div>
-        </div>
-    </section>
+            </div>
+        </section>
 
-    <section class="cards-container">
-        <div class="card">
-            <h3>Dr. Al Terrado</h3>
-            <p class="title">Doctor of Veterinary Medicine</p>
-            <p>With over 10 years of experience in small animal medicine, Dr. Sharma specializes in dermatology and internal medicine. She's passionate about providing compassionate and thorough care through online consultations.</p>
-            <div class="rating">Paw Rating: 🐾🐾🐾🐾🤍 (41 Rates)</div>
-            <button class="appoint-btn">APPOINT</button>
-        </div>
+  <section class="cards-container">
+    <div class="card">
+      <h3>Dr. Al Terrado</h3>
+      <p class="title">Doctor of Veterinary Medicine</p>
+      <p>With over 10 years of experience in small animal medicine, Dr. Sharma specializes in dermatology and internal medicine. She's passionate about providing compassionate and thorough care through online consultations.</p>
+      <div class="rating">Paw Rating: 🐾🐾🐾🐾🤍 (41 Rates)</div>
+      <button class="appoint-btn">APPOINT</button>
+    </div>
 
-        <div class="card">
-            <h3>Dr. David Enriquez</h3>
-            <p class="title">Bachelor of Veterinary Science</p>
-            <p>Dr. Enriquez brings expertise in feline health and behavior, offering insightful guidance and personalized care plans. He is dedicated to making virtual vet visits a stress-free experience for both pets and owners.</p>
-            <div class="rating">Paw Rating: 🐾🐾🐾🐾🐾 (26 Rates)</div>
-            <button class="appoint-btn">APPOINT</button>
-        </div>
-    </section>
+    <div class="card">
+      <h3>Dr. David Enriquez</h3>
+      <p class="title">Bachelor of Veterinary Science</p>
+      <p>Dr. Enriquez brings expertise in feline health and behavior, offering insightful guidance and personalized care plans. He is dedicated to making virtual vet visits a stress-free experience for both pets and owners.</p>
+      <div class="rating">Paw Rating: 🐾🐾🐾🐾🐾 (26 Rates)</div>
+      <button class="appoint-btn">APPOINT</button>
+    </div>
 
-    <footer class="footer">
-        <div class="footer-logo">
-            <img src="ECSE Paws & Sniff.png" alt="ECSE Paws & Sniff Logo" style="height: 60px;">
-            <p>Your Pet's Health, Our Expert Care – Online Vet Consultations Anytime!</p>
-        </div>
-        <div class="footer-links">
-            <ul>
-                <li>TERMS OF SERVICE</li>
-                <li>TERMS OF USE</li>
-                <li>PRIVACY</li>
-                <li>SUBSCRIPTION & PRICING</li>
-            </ul>
-        </div>
-        <div class="footer-links">
-            <ul>
-                <li>ABOUT US</li>
-                <li>CONTACT US</li>
-                <li>SUPPORT</li>
-                <li>FAQs</li>
-            </ul>
-        </div>
-        <div class="footer-contact">
-            <p><strong>MANILA</strong></p>
-            <p>egsepaws&sniff@gmail.com</p>
-            <p>0992 417 2021</p>
-            <p>2nd Floor, 2534 Juan Luna St, Gagalandin Tondo, Manila, 1013 Metro Manila</p>
-            <p>SEE ON MAP <svg style="width:1em; height:1em; vertical-align:-0.125em" viewBox="0 0 1024 1024" fill="currentColor" xmlns="http://www.w3.org/2000/svg"><path d="M864 640a32 32 0 0 1-64 0V256H224v384a32 32 0 0 1-64 0V192a64 64 0 0 1 64-64h640a64 64 0 0 1 64 64v448zm-448 64H160a32 32 0 0 1-32-32V32a32 32 0 0 1 32-32h704a32 32 0 0 1 32 32v672a32 32 0 0 1-32 32h-64V416a32 32 0 0 1-32-32H448a32 32 0 0 1-32 32v288zM672 352h-96a32 32 0 0 1-32-32V128a32 32 0 0 1 32-32h96a32 32 0 0 1 32 32v192a32 32 0 0 1-32 32z"/></svg></p>
-            <div class="social-icons">
-                <span><svg viewBox="0 0 512 512" fill="currentColor" xmlns="http://www.w3.org/2000/svg"><path d="M512 256C512 114.6 397.4 0 256 0S0 114.6 0 256c0 129.1 84 237.1 204.8 274.9V330.9h-57.1V256h57.1v-78.2c0-56.5 34.9-87.6 86.5-87.6 25.1 0 51.9 4.5 58.5 6.5v66.8h-40.7c-27.4 0-32.7 13-32.7 32.1v41.4h65.7l-8.6 67.8h-57.1v200.1C428 493.1 512 385.1 512 256z"/></svg></span>
-                <span><svg viewBox="0 0 512 512" fill="currentColor" xmlns="http://www.w3.org/2000/svg"><path d="M512 96.8c-18.4 8.2-38.1 13.7-58.6 16.2 21.3-12.7 37.7-32.8 45.5-56.7-20 11.9-42.2 20.5-65.7 25.1-18.9-20.1-45.9-32.7-75.4-32.7-56.7 0-102.9 46.3-102.9 103.3 0 16.2 1.9 31.8 5.5 46.8-85.4-4.3-161.3-45.1-212.2-107.1-17.6 30.3-27.7 65.5-27.7 101.7 0 35.6 18.2 67 45.8 85.2-16.8-.5-32.4-5.2-45.9-12.9v1.3c0 49.7 35.3 91.1 82.2 100.9-8.6 2.3-17.6 3.5-26.8 3.5-6.6 0-13-.6-19.3-1.8 12.9 40.7 50.7 70.4 95.3 71.1-35 27.5-79.1 44.2-126.8 44.2-8.3 0-16.3-.5-24.1-1.4 45.9 29.5 100.7 46.9 160.8 46.9 192.9 0 298.9-160.2 298.9-298.2 0-4.6-.1-9.1-.3-13.5 20.6-15.1 38.5-33.9 52.7-56.7z"/></svg></span>
-                <span><svg viewBox="0 0 448 512" fill="currentColor" xmlns="http://www.w3.org/2000/svg"><path d="M224 202.7c27.6 0 50 22.4 50 50s-22.4 50-50 50-50-22.4-50-50 22.4-50 50-50zM224 0C100.3 0 0 100.3 0 224c0 44.6 15.5 85.2 40.9 117.8l.2.1L224 512l182.7-170.1.2-.1C432.5 309.2 448 268.6 448 224 448 100.3 347.7 0 224 0zm0 366.8c-82.9 0-150.1-67.2-150.1-150.1 0-82.9 67.2-150.1 150.1-150.1 82.9 0 150.1 67.2 150.1 150.1 0 82.9-67.2 150.1-150.1 150.1z"/></svg></span>
-                <span><svg viewBox="0 0 512 512" fill="currentColor" xmlns="http://www.w3.org/2000/svg"><path d="M464 64c-16.5 0-33 7-45.1 19.1L48 188.1c-13 13-13 34.1 0 47.1l163.9 163.9c12.1 12.1 33.1 12.1 45.1 0l141-141c12.1-12.1 12.1-33.1 0-45.1L464 64zM33.9 274.9c-13 13-13 34.1 0 47.1l102.1 102.1c12.1 12.1 33.1 12.1 45.1 0L480.9 154.1c13-13 13-34.1 0-47
+    <script src="https://kit.fontawesome.com/f41b98105d.js" crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+</body>
+</html>
