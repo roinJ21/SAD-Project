@@ -559,6 +559,57 @@ nav i {
       cursor: pointer;
     }
 
+.footer {
+            background-color: #222;
+            color: #eee;
+            padding: 30px 20px;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            align-items: start;
+            font-size: 0.9rem;
+        }
+
+        .footer-logo img {
+            height: 60px;
+            margin-bottom: 10px;
+        }
+
+        .footer-links ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        .footer-links li {
+            margin-bottom: 8px;
+        }
+
+        .footer-contact a {
+            color: #eee;
+            text-decoration: none;
+        }
+
+        .social-icons {
+            display: flex;
+            gap: 10px;
+            margin-top: 20px;
+        }
+
+        .social-icons img {
+            width: 30px;
+            height: 30px;
+            border-radius: 50%;
+            background-color: #555;
+            padding: 5px;
+        }
+
+        .copyright {
+            width: 100%;
+            text-align: center;
+            padding-top: 20px;
+            color: #777;
+        }
+
 
 
 
